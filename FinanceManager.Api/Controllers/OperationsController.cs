@@ -1,7 +1,9 @@
 namespace FinanceManager.Api.Controllers;
 
+// Libraries Usings
 using Microsoft.AspNetCore.Mvc;
 
+// Project Usings
 using FinanceManager.Database.Models;
 using FinanceManager.Database.Interfaces;
 
