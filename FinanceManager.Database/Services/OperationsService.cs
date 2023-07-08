@@ -20,7 +20,7 @@ public class OperationsService : IOperationsService {
     return results;
   }
 
-  public async Task<Operation?> GetOperationById(int Id) {
-    return await _context.Operations.Where(Operation => Operation.Id == Id).FirstAsync();
+  public async Task<Operation?> GetOperationById(int operationId) {
+    return await _context.Operations.Where(Operation => Operation.Id == operationId).FirstAsync();
   }
 }

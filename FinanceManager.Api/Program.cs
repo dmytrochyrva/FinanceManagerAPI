@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<FinanceManagerContext>();
 builder.Services.AddScoped<IOperationsService, OperationsService>();
+builder.Services.AddScoped<ICategoriesService, CategoriesService>();
 
 
 var app = builder.Build();
