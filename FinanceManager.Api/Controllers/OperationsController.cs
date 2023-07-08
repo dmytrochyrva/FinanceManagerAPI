@@ -1,8 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using FinanceManagerAPI.Models;
-using FinanceManagerAPI.Services.Interfaces;
+namespace FinanceManager.Api.Controllers;
 
-namespace FinanceManagerAPI.Controllers;
+using Microsoft.AspNetCore.Mvc;
+
+using FinanceManager.Database.Models;
+using FinanceManager.Database.Interfaces;
+
 
 [ApiController]
 [Route("api/[controller]")]
@@ -30,10 +32,10 @@ public class OperationsController : ControllerBase
     }
 
     [HttpGet]
-    [Route("{id}")]
-    public async Task<ActionResult<IEnumerable<Operation>>> GetById(int id)
+    [Route("{operationId}")]
+    public async Task<ActionResult<IEnumerable<Operation>>> GetById(int operationId)
     {
-        var result = await _operationsService.GetOperationById(id);
+        var result = await _operationsService.GetOperationById(operationId);
 
         if(result != null) {
             return Ok(result);

@@ -1,12 +1,10 @@
-using FinanceManagerAPI.Models;
-using FinanceManagerAPI.Context;
-using FinanceManagerAPI.Services.Interfaces;
+namespace FinanceManager.Database.Services;
 
 using Microsoft.EntityFrameworkCore;
 
-
-
-namespace FinanceManagerAPI.Services;
+using FinanceManager.Database.Models;
+using FinanceManager.Database.Context;
+using FinanceManager.Database.Interfaces;
 
 public class OperationsService : IOperationsService {
   private readonly FinanceManagerContext _context;

@@ -1,4 +1,4 @@
-namespace FinanceManagerAPI.Models;
+namespace FinanceManager.Database.Models;
 
 public class Operation
 {

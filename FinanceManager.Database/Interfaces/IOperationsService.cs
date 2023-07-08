@@ -1,6 +1,6 @@
-using FinanceManagerAPI.Models;
+namespace FinanceManager.Database.Interfaces;
 
-namespace FinanceManagerAPI.Services.Interfaces;
+using FinanceManager.Database.Models;
 
 public interface IOperationsService {
   Task<IList<Operation>> GetOperations();

@@ -1,4 +1,4 @@
-namespace FinanceManagerAPI.Models;
+namespace FinanceManager.Database.Models;
 
 public class Category {
   public string? Id { get; set; }

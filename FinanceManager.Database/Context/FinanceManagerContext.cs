@@ -1,7 +1,9 @@
-using FinanceManagerAPI.Models;
-using Microsoft.EntityFrameworkCore;
+namespace FinanceManager.Database.Context;
 
-namespace FinanceManagerAPI.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
+using FinanceManager.Database.Models;
 
 public class FinanceManagerContext : DbContext {
   private readonly IConfiguration _config;
